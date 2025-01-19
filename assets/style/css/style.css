@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('/assets/font/FilsonProBold.woff2') format('woff2'),
+        url('/assets/font/FilsonProMedium.woff2') format('woff2'),
+        url('/assets/font/FilsonProRegular.woff2') format('woff2'),
+        url('/assets/font/FilsonProRegularItalic.woff2') format('woff2');
+}
+
+body {
+    font-family: MyWebFont;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.recipe-card {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-card .card-body {
+    padding: 10px;
+}
+
+.recipe-card .badge {
+    margin-right: 5px;
+}
+
+.footer {
+    background-color: #71aa81;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .col-md-3 {
+    margin-bottom: 20px;
+}
+
+.recipe-card {
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto; /* Menjaga proporsi gambar */
+    object-fit: cover;
+}
+
+.recipe-card .card-body {
+    padding: 10px;
+    text-align: center;
+}
+
+.recipe-card .badge {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.recipe-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.recipe-card {
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+}
+
+.profile-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    background-color: #fff;
+}
+.profile-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.profile-card h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+.profile-card .social-icons {
+    margin-top: 10px;
+}
+.profile-card .social-icons a {
+    margin: 0 10px;
+    color: #71aa81;
+    font-size: 1.2rem;
+}
+.profile-card .position {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #777;
+}
+
+.col-md-4 {
+    flex: 1 1 calc(33.333% - 20px); /* Tiga kolom untuk desktop */
+    max-width: calc(33.333% - 20px);
+}
+
+@media (max-width: 992px) {
+    .col-md-4 {
+        flex: 1 1 calc(50% - 20px); /* Dua kolom untuk tablet */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 1 1 100%; /* Satu kolom untuk ponsel */
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .recipe-card .card-body {
+        padding: 8px;
+    }
+
+    .recipe-card .badge {
+        font-size: 10px;
+    }
+}
